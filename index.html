@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sergei Vasilenko's CV</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="./components/index.js"></script>
+  </head>
+
+  <body class="cv-page">
+    <header class="header">
+      <div class="header__left">
+        <h1 data-nav-title="Вверх">Sergei Vasilenko</h1>
+        <div class="heading__position">JavaScript Web Developer</div>
+      </div>
+      <div class="header__right">
+        <button
+          is="theme-toggle"
+          default-theme="dark"
+          class="header__theme-toggle"
+        ></button>
+      </div>
+    </header>
+    <div class="middle-block">
+      <aside class="aside-left">
+        <img src="./img/ava.webp" alt="ava" class="avatar" />
+      </aside>
+      <main class="main">
+        <section class="about-me">
+          <h3 data-nav-title>Обо мне</h3>
+          <p>
+            Мне <years-old birth="1987-04-26"></years-old> лет, женат. Последнее
+            время живем в Индии.
+          </p>
+          <p>
+            Интересуюсь подходами к програмированию и языками программирования.
+            Люблю делать сложные вещи простыми. Занимаюсь веб-разработкой.
+          </p>
+          <p>В поисках "срединного пути" в программировании.</p>
+        </section>
+        <section class="technologies">
+          <h3 data-nav-title>Технологии</h3>
+          <ul class="technologies__list list--compact">
+            <li>Semantic HTML5</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>SCSS</li>
+            <li>Vue 2</li>
+            <li>Vue 3</li>
+            <li>Vue Router</li>
+            <li>Vuex</li>
+            <li>Nuxt</li>
+            <li>React</li>
+            <li>Redux Toolkit</li>
+            <li>Cypress</li>
+            <li>Gherkin</li>
+            <li>D3.js</li>
+            <li>Linux</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section class="experience">
+          <h3 data-nav-title>Опыт работы</h3>
+          <div class="experience__step">
+            <div class="experience__step-info">
+              <h4 class="experience__step-info-company">SATVA.DEV</h4>
+              <h5 class="experience__step-info-role">Frontend Developer</h5>
+              <date-interval since="2021-07-01" until="now"></date-interval>
+            </div>
+            <div class="experience__step-description">
+              <div class="experience__step-description-project project">
+                <h4 class="project__title">ERP</h4>
+                <h5>О проекте:</h5>
+                <p>
+                  Внутренний проект компании для планирования и информирования
+                  сотрудников, учета состояния проектов, ведения бухгалтерии
+                  компании.
+                </p>
+                <h5>Команда:</h5>
+                <ul>
+                  <li>Frontend - 2</li>
+                  <li>Backend - 2</li>
+                  <li>DevOps - 1</li>
+                  <li>QA - 2</li>
+                  <li>PM - 1</li>
+                </ul>
+                <h5>Мои обязанности:</h5>
+                <ul>
+                  <li>принятие участия в продумывании архитектуры</li>
+                  <li>разработка нового функционала</li>
+                  <li>фикс багов</li>
+                </ul>
+                <h5>Интересные задачи:</h5>
+                <ul>
+                  <li>оптимизация таблицы планирования отпусков</li>
+                  <li>создание блок-схемы иерархии компании</li>
+                  <li>система вывода сообщений об ошибках</li>
+                  <li>
+                    реализация функционала нескольких связанных таблиц для
+                    планирования сотрудников по проектам
+                  </li>
+                </ul>
+              </div>
+              <div class="experience__step-description-project project">
+                <h4 class="project__title">Business cats (Alabuga)</h4>
+                <h5>О проекте:</h5>
+                <p>
+                  Для компании ОЭЗ «Алабуга» было разработано высоконагруженное
+                  браузерное приложение - бизнес-симуляция для обучения и отбора
+                  сотрудников и студентов в игровой форме. Сейчас готовое
+                  приложение активно используется в компании.
+                </p>
+                <h5>Команда:</h5>
+                <ul>
+                  <li>Frontend - 4</li>
+                  <li>Backend - 3</li>
+                  <li>DevOps - 1</li>
+                  <li>QA - 3</li>
+                  <li>PM - 1</li>
+                  <li>BA - 1</li>
+                  <li>UI/UX - 2</li>
+                  <li>Illustrator - 1</li>
+                </ul>
+                <h5>Мои обязанности:</h5>
+                <ul>
+                  <li>фикс багов</li>
+                  <li>вёрстка (адаптив, кроссбраузерность)</li>
+                  <li>разработка нового функционала</li>
+                </ul>
+              </div>
+              <div class="experience__step-description-project project">
+                <h4 class="project__title">AskWallet</h4>
+                <h5>О проекте:</h5>
+                <p>
+                  Платформа для агрегации информации, позволяющая добавлять
+                  скрипты, мета-теги (SEO), создавать цветовые схемы,
+                  локализации, динамические фильтрации, сортировки и другие
+                  вещи.
+                </p>
+                <p>
+                  На данный момент на базе проекта развернуто 3 сайта, каждый из
+                  которых является производной общей кодовой базы:
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://askwallet.io/"
+                      target="_blank"
+                      rel="noopener"
+                      >askwallet.io</a
+                    >
+                    - изначальный проект
+                  </li>
+                  <li>
+                    <a
+                      href="https://skillscanner.io/"
+                      target="_blank"
+                      rel="noopener"
+                      >skillscanner.io</a
+                    >
+                    - агрегация онлайн-курсов
+                  </li>
+                  <li>
+                    <a
+                      href="https://askbetting.ru/"
+                      target="_blank"
+                      rel="noopener"
+                      >askbetting.ru</a
+                    >
+                    - ставки на спорт
+                  </li>
+                </ul>
+                <p>
+                  Для тестирования используется один общий стенд. На проекте
+                  исполнял роль ключевого frontend-разработчика.
+                </p>
+                <h5>Команда:</h5>
+                <ul>
+                  <li>Frontend - 2</li>
+                  <li>Backend - 1</li>
+                  <li>DevOps - 1</li>
+                  <li>QA - 1</li>
+                  <li>PM - 1</li>
+                  <li>UI/UX - 1</li>
+                </ul>
+                <h5>Стек:</h5>
+                <ul>
+                  <li>Vue2</li>
+                  <li>Vuex</li>
+                  <li>NuxtJS</li>
+                  <li>RestAPI</li>
+                  <li>Django</li>
+                </ul>
+
+                <h5>Интересные задачи:</h5>
+                <ul>
+                  <li>
+                    возможность добавлять пользовательские компоненты в блоки
+                    текста через админ-панель
+                  </li>
+                  <li>динамический роутинг</li>
+                  <li>фильтрация, сортировка и поиск через сервер</li>
+                  <li>настраиваемая через админку цветовая схема</li>
+                </ul>
+              </div>
+              <div class="experience__step-description-project project">
+                <h4 class="project__title">Сайт компании</h4>
+                <h5>О проекте:</h5>
+                <p>
+                  У отдела привлечения клиентов появился запрос на создание
+                  статического сайта компании взамен одностраничника на
+                  платформе Tilda.
+                </p>
+                <p>
+                  В дальнейшем появились требования для администрирования сайта
+                  через админ-панель, а также был разработан более подходящий
+                  дизайн. На данный момент мой вариант сайта недоступен.
+                </p>
+                <p>Реализация заняла примерно три недели.</p>
+                <h5>Команда:</h5>
+                <ul>
+                  <li>Frontend - 1</li>
+                  <li>DevOps - 1</li>
+                  <li>QA - 1</li>
+                </ul>
+                <h5>Стек:</h5>
+                <ul>
+                  <li>React</li>
+                  <li>Next.js</li>
+                </ul>
+                <h5>Интересные задачи:</h5>
+                <ul>
+                  <li>подключение яндекс-капчи</li>
+                  <li>защита от спам-роботов</li>
+                  <li>реализация отправки писем на основе Node.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="experience__step">
+            <div class="experience__step-info">
+              <h4 class="experience__step-info-company">SATVA.DEV</h4>
+              <h5 class="experience__step-info-role">QA Automation Engineer</h5>
+              <date-interval
+                since="2021-03-01"
+                until="2021-06-30"
+              ></date-interval>
+            </div>
+            <div class="experience__step-description">
+              <div class="experience__step-description-project project">
+                <h4 class="project__title">Business cats (Alabuga)</h4>
+                <h5>Мои обязанности:</h5>
+                <ul>
+                  <li>тестирование web-приложения: UI/UX, API</li>
+                  <li>
+                    составление документации по тестированию и поддержание ее в
+                    актуальном состоянии
+                  </li>
+                  <li>
+                    cоздание тестового модуля на основе Cypress + Cucumber
+                  </li>
+                </ul>
+                <h5>Интересные задачи:</h5>
+                <ul>
+                  <li>написание модуля для тестирования в стиле chainable</li>
+                  <li>
+                    написание браузерного приложения для упрощенного составления
+                    тестов на языке Gherkin
+                  </li>
+                  <li>написание отладочного модуля для автотестов</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="present">
+          <h3 data-nav-title>В настоящем</h3>
+          <p>Сейчас я думаю о том, как:</p>
+          <ul>
+            <li>обрабатывать ошибки и исключения;</li>
+            <li>
+              писать приложения, которые масштабируются с минимальными
+              затратами;
+            </li>
+            <li>писать легко переносимый код;</li>
+            <li>делать код самодокументируемым и простым для восприятия.</li>
+          </ul>
+        </section>
+        <section class="goals">
+          <h3 data-nav-title>Планирую изучить</h3>
+          Планы по изучению:
+          <ul class="goals__list list--compact">
+            <li>Docker</li>
+            <li>Emacs</li>
+            <li>Touch typing</li>
+            <li>NixOS</li>
+            <li>SQL</li>
+            <li>Rust</li>
+            <li>Clojure</li>
+          </ul>
+        </section>
+      </main>
+      <aside class="aside-right">
+        <nav-bar marker="data-nav-title" class="navbar"></nav-bar>
+        <contacts-list class="contacts"></contacts-list>
+      </aside>
+    </div>
+  </body>
+</html>

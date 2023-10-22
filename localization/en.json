@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "about_me": "About me",
+    "technologies": "Technologies",
+    "work_experiences": "Work Experiences",
+    "present": "Present",
+    "learning_goals": "Learning Goals"
+  },
+  "project_headings": {
+    "about_project": "About project",
+    "team": "Team",
+    "my_responsibilities": "My responsibilities",
+    "interesting_tasks": "Interesting tasks",
+    "stack": "Stack"
+  }
+}
