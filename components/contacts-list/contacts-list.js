@@ -1,4 +1,4 @@
-import contacts from "../js/contacts.js";
+import contacts from "../../js/contacts.js";
 
 customElements.define(
   "contacts-list",
