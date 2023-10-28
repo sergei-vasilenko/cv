@@ -4,16 +4,22 @@ html {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 50px;
   margin: 0 0 30px;
   font-weight: 700;
+  @media (max-width: 760px) {
+    font-size: 28px;
+    margin: 0 0 10px;
+  }
 }
 
-h3 {
+h2 {
   font-size: 30px;
   color: var(--heading-text-color);
-  letter-spacing: 4px;
   margin-bottom: 16px;
+  @media (max-width: 760px) {
+    font-size: 22px;
+  }
 }
 
 h5 {
@@ -38,12 +44,16 @@ ul:not([class]) {
 .cv-page {
   max-width: 1400px;
   width: 100%;
-  padding: 150px 50px;
+  padding: 50px;
   margin: 0 auto;
   position: relative;
   font-family: Oxygen, Helvetica, sans-serif;
   font-size: 16px;
   color: var(--default-text-color);
+  @media (max-width: 760px) {
+    padding: 20px;
+    font-size: 14px;
+  }
 }
 
 .header {
@@ -53,7 +63,10 @@ ul:not([class]) {
 }
 
 .header__left {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  @media (max-width: 760px) {
+    margin-bottom: 15px;
+  }
 }
 
 .header__theme-toggle {
@@ -72,35 +85,42 @@ ul:not([class]) {
 .header__theme-toggle svg {
   width: 80px;
   height: 80px;
+  @media (max-width: 760px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .heading__position {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
-  letter-spacing: 4px;
+  @media (max-width: 760px) {
+    font-size: 20px;
+  }
 }
 
 .middle-block {
   display: grid;
-  grid-template-columns: 100px 1fr 350px;
-  border-top: 2px solid var(--border-color);
+  grid-template-columns: 1fr 350px;
   column-gap: 20px;
   line-height: 1.7;
-  letter-spacing: 1px;
 
   @media (max-width: 1200px) {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 1fr 250px;
   }
-}
 
-.main {
-  padding: 70px 30px 60px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .experience__step {
   display: grid;
   grid-template-columns: 230px 1fr;
   column-gap: 30px;
+  @media (max-width: 760px) {
+    display: block;
+  }
 }
 
 .experience__step:not(:first-of-type) {
@@ -114,7 +134,7 @@ ul:not([class]) {
 
 .experience__step-info-role {
   font-size: 16px;
-  margin: 0 0 16px;
+  margin: 10px 0 16px;
 }
 
 .project:not(:first-child) {
@@ -131,12 +151,11 @@ ul:not([class]) {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding: 70px 30px 60px;
-  border-left: 2px solid var(--border-color);
-  @media (max-width: 1200px) {
+  padding: 30px;
+  @media (max-width: 1024px) {
     position: fixed;
     bottom: 0;
-    right: 40px;
+    right: 45px;
     padding: 20px 40px;
     flex-direction: row;
     border: 2px solid var(--border-color);
@@ -174,18 +193,6 @@ ul:not([class]) {
 
 .aside-block__list-item::marker {
   color: var(--heading-text-color);
-}
-
-.aside-left {
-  display: flex;
-  justify-content: center;
-  padding: 70px 0 60px;
-}
-
-.avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
 }
 
 .list--compact {

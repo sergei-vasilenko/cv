@@ -25,15 +25,13 @@ customElements.define(
       .navbar__item-elem {
         display: inline-block;
         color: var(--default-text-color);
-        font-size: 20px;
+        font-size: 16px;
         cursor: pointer;
-        transition: transform, text-shadow 300ms;
-        letter-spacing: 2px;
+        transition: text-shadow 300ms;
       }
       .navbar__item-elem:hover {
-        text-shadow: 0 0 10px var(--nav-hover-color);
-        transform: translate(-1px, 0px);
-        transition: transform 300ms, text-shadow 300ms;
+        text-shadow: 0 0 3px var(--nav-hover-color);
+        transition: text-shadow 300ms;
       }
       `;
       this.#root.appendChild(style);
