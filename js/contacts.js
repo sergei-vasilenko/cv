@@ -42,12 +42,12 @@ const linkedinIcon = `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg
 
 export default [
   {
-    title: "WhatsApp",
+    title: "WhatsApp: +79528307286",
     link: "https://wa.me/79528307286",
     icon: whatsappIcon,
   },
   {
-    title: "Telegram",
+    title: "Telegram: @sym_sergei_vasilenko",
     link: "https://t.me/sym_sergei_vasilenko",
     icon: telegramIcon,
   },
