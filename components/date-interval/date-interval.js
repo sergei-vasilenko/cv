@@ -36,26 +36,25 @@ customElements.define(
       }
     }
 
-    calcDuration = (since, until) => {
-      const yearDiff = until.getFullYear() - since.getFullYear();
-      const monthDiff = until.getMonth() - since.getMonth();
-      const dayDiff = until.getDate() - since.getDate() + 1;
-      const isFullYear = 12 === monthDiff;
-      const isFullMonth = dayDiff > 15;
-
+    calcDuration(since, until) {
+      const timeDifference = until - since;
+      const millisecondsInYear = 365 * 24 * 60 * 60 * 1000;
+      const years = Math.floor(timeDifference / millisecondsInYear);
+      const remainingMilliseconds = timeDifference % millisecondsInYear;
+      const months = Math.floor(
+        remainingMilliseconds / (30 * 24 * 60 * 60 * 1000)
+      );
       let result = "";
-      if (yearDiff > 0 && !isFullYear) {
-        const yearsCount = isFullYear ? yearDiff + 1 : yearDiff;
-        result += yearsCount + (yearsCount === 1 ? " year" : " years");
+      if (years > 0) {
+        result += years + (years === 1 ? " year" : " years");
       }
-      if (monthDiff > 0 && !isFullYear) {
-        const monthsCount = isFullMonth ? monthDiff + 1 : monthDiff;
+      if (months > 0) {
         result += result ? " " : "";
-        result += monthsCount + (monthsCount === 1 ? " month" : " months");
+        result += months + (months === 1 ? " month" : " months");
       }
 
       return result;
-    };
+    }
 
     getFormattedInterval(since, until, isNowUntil) {
       const monthsName = [
