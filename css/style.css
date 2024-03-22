@@ -10,13 +10,10 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--heading-text-color);
+  margin-top: 26px;
   margin-bottom: 16px;
-}
-
-h5 {
-  margin-bottom: 10px;
 }
 
 a,
@@ -76,6 +73,7 @@ ul:not([class]) {
 .heading__position {
   font-size: 35px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .middle-block {
@@ -93,26 +91,6 @@ ul:not([class]) {
 
 .experience__step:not(:first-of-type) {
   margin-top: 40px;
-}
-
-.experience__step-info-company {
-  font-size: 20px;
-  margin: 0 0 6px;
-  color: var(--default-text-color);
-}
-
-.experience__step-info-role {
-  font-size: 16px;
-  margin: 10px 0 16px;
-}
-
-.project:not(:first-child) {
-  margin-top: 34px;
-}
-
-.project__title {
-  font-size: 20px;
-  margin: 0 0 16px;
 }
 
 .aside-right {
@@ -154,14 +132,6 @@ ul:not([class]) {
   color: var(--heading-text-color);
 }
 
-.list--compact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  column-gap: 30px;
-  padding-left: 30px;
-}
-
 @media (max-width: 1200px) {
   .middle-block {
     max-width: 100%;
@@ -175,9 +145,6 @@ ul:not([class]) {
   }
   .middle-block {
     grid-template-columns: 1fr;
-  }
-  .list--compact {
-    column-gap: 10px;
   }
   .aside-right {
     padding: 30px 0;

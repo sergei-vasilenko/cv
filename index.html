@@ -46,6 +46,11 @@
         <div class="header__left">
           <h1>Sergei Vasilenko</h1>
           <div class="heading__position">Frontend Developer</div>
+          <date-interval
+            since="2021-03-01"
+            until="now"
+            class="experience__step-interval"
+          ></date-interval>
         </div>
         <div class="header__right">
           <button
@@ -57,265 +62,63 @@
       </header>
       <div class="middle-block">
         <main class="main">
-          <section class="about-me">
+          <section class="section">
             <h2 data-nav-title>About me</h2>
             <p>
-              I'm interested in approaches to programming and programming
-              languages. I like to make complex things simple. I love vanilla
-              JavaScript and creating utilities that make development easier. I
-              engage in web development. In search of the "middle way" in
-              programming.
+              I am self-taught, have no specialized education, but love my job
+              very much. I'm interested in creating tools that help make code
+              cleaner and more understandable. I love challenging tasks.
             </p>
+          </section>
+          <section class="section">
+            <h2 data-nav-title>What I was able to work with</h2>
             <p>
-              Currently I'm looking for a company with an advanced development
-              culture to work as a developer.
+              Vue 2, Vue 3, Nuxtjs, Vuex, Reactjs, Nextjs, Redux Toolkit, D3.js,
+              HTML5, CSS, SCSS, Gherkin, Cypress, Vanilla JavaScript, npm, yarn,
+              git, MongoDB (mongoose), PouchDB, Svelte, Nodejs, Express, Rollup,
+              eslint, prettier, ngrok, gitlab, CI/CD and something else.
             </p>
           </section>
-          <section class="experience">
-            <h2 data-nav-title>Experience</h2>
-            <div class="experience__step">
-              <div class="experience__step-info">
-                <h3 class="experience__step-info-company">SATVA.DEV</h3>
-                <div class="experience__step-info-role">Frontend Developer</div>
-                <date-interval
-                  since="2021-07-01"
-                  until="now"
-                  class="experience__step-interval"
-                ></date-interval>
-              </div>
-              <div class="experience__step-description">
-                <div class="experience__step-description-project project">
-                  <h4 class="project__title">ERP</h4>
-                  <h5>About project:</h5>
-                  <p>
-                    An internal company project for planning and informing
-                    employees, recording the status of projects, and maintaining
-                    company accounting.
-                  </p>
-                  <h5>Team:</h5>
-                  <p>Frontend - 2, Backend - 2, DevOps - 1, QA - 2, PM - 1</p>
-                  <h5>Stack:</h5>
-                  <p>Vue2, Vuex, RestAPI, Django</p>
-                  <h5>My responsibilities:</h5>
-                  <ul>
-                    <li>participation in thinking through architecture</li>
-                    <li>development of new functionality</li>
-                  </ul>
-                  <h5>Interesting tasks:</h5>
-                  <ul>
-                    <li>
-                      setting up an api service to interact with the backend
-                      using JWT (writing a module for a custom api service)
-                    </li>
-                    <li>creating a role-based access model</li>
-                    <li>
-                      creating a form with dynamically specified fields, the
-                      ability to validate them and other basic settings. Field
-                      types: input, select, toggle, calendar
-                    </li>
-                    <li>
-                      optimization of the vacation planning table (transition to
-                      a new data structure)
-                    </li>
-                    <li>creating a company hierarchy flowchart (d3.js)</li>
-                    <li>error reporting system</li>
-                    <li>
-                      implementation of the functionality of several related
-                      tables for scheduling employees on projects
-                    </li>
-                  </ul>
-                </div>
-                <div class="experience__step-description-project project">
-                  <h4 class="project__title">AskWallet</h4>
-                  <h5>About project:</h5>
-                  <p>
-                    A platform for aggregating information that allows you to
-                    add scripts, meta tags (SEO), create color schemes,
-                    localizations, dynamic filtering, sorting and other things.
-                  </p>
-                  <p>
-                    At the moment, 3 sites are deployed on the basis of the
-                    project, each of which is a derivative of the common code
-                    base:
-                  </p>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://askwallet.io/"
-                        target="_blank"
-                        rel="noopener"
-                        >askwallet.io</a
-                      >
-                      - original project
-                    </li>
-                    <li>
-                      <a
-                        href="https://skillscanner.io/"
-                        target="_blank"
-                        rel="noopener"
-                        >skillscanner.io</a
-                      >
-                      - aggregation of online courses (not available)
-                    </li>
-                    <li>
-                      <a
-                        href="https://askbetting.ru/"
-                        target="_blank"
-                        rel="noopener"
-                        >askbetting.ru</a
-                      >
-                      - sports betting (moved to another codebase)
-                    </li>
-                  </ul>
-                  <p>
-                    One common stand was used for testing. I played the role of
-                    a key frontend developer on the project.
-                  </p>
-                  <h5>Team:</h5>
-                  <p>
-                    Frontend - 2, Backend - 1, DevOps - 1, QA - 1, PM - 1,
-                    >UI/UX - 1
-                  </p>
-                  <h5>Stack:</h5>
-                  <p>Vue2, Vuex, NuxtJS, RestAPI, Django</p>
-                  <h5>Interesting tasks:</h5>
-                  <ul>
-                    <li>
-                      ability to add custom components to blocks of text via the
-                      admin panel
-                    </li>
-                    <li>dynamic routing</li>
-                    <li>filtering, sorting and searching via server</li>
-                    <li>customizable color scheme via the admin panel</li>
-                  </ul>
-                </div>
-                <div class="experience__step-description-project project">
-                  <h4 class="project__title">Company site</h4>
-                  <h5>About project:</h5>
-                  <p>
-                    The customer acquisition department received a request to
-                    create a static company website to replace the one-pager on
-                    the Tilda platform.
-                  </p>
-                  <p>
-                    Subsequently, requirements appeared for administering the
-                    site through the admin panel, and a more suitable design was
-                    developed. At the moment my version of the site is not
-                    available.
-                  </p>
-                  <p>Implementation took approximately three weeks.</p>
-                  <h5>Team:</h5>
-                  <p>Frontend - 1, DevOps - 1, QA - 1</p>
-                  <h5>Stack:</h5>
-                  <p>React, Next.js</p>
-                  <h5>Interesting tasks:</h5>
-                  <ul>
-                    <li>connecting captcha</li>
-                    <li>protection against spam robots</li>
-                    <li>implementation of sending letters based on Node.js</li>
-                  </ul>
-                </div>
-                <div class="experience__step-description-project project">
-                  <h4 class="project__title">Business cats (Alabuga)</h4>
-                  <h5>About project:</h5>
-                  <p>
-                    A highly loaded browser application was developed for the
-                    SEZ "Alabuga" company - a business simulation for training
-                    and selecting employees and students in a game form. Now the
-                    finished application is actively used in the company.
-                  </p>
-                  <h5>Team:</h5>
-                  <p>
-                    Frontend - 4, Backend - 3, DevOps - 1, QA - 3, PM - 1, BA -
-                    1, UI/UX - 2, Illustrator - 1
-                  </p>
-                  <h5>My responsibilities:</h5>
-                  <ul>
-                    <li>layout (adaptive, cross-browser compatible)</li>
-                    <li>development of new functionality</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="experience__step">
-              <div class="experience__step-info">
-                <h3 class="experience__step-info-company">SATVA.DEV</h3>
-                <div class="experience__step-info-role">
-                  QA Automation Engineer
-                </div>
-                <date-interval
-                  since="2021-03-01"
-                  until="2021-08-30"
-                ></date-interval>
-              </div>
-              <div class="experience__step-description">
-                <div class="experience__step-description-project project">
-                  <h4 class="project__title">Business cats (Alabuga)</h4>
-                  <h5>My responsibilities:</h5>
-                  <ul>
-                    <li>web application testing: UI/UX, API</li>
-                    <li>
-                      compiling testing documentation and keeping it up to date
-                    </li>
-                    <li>creating a test module based on Cypress + Cucumber</li>
-                  </ul>
-                  <h5>Interesting tasks:</h5>
-                  <ul>
-                    <li>writing a module for testing in chainable style</li>
-                    <li>
-                      writing a browser application for simplified testing in
-                      the Gherkin language (vanilla JavaScript)
-                    </li>
-                    <li>writing a debugging module for autotests</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="technologies">
-            <h2 data-nav-title>Technologies</h2>
-            <ul class="technologies__list list--compact">
-              <li>HTML5</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>JS custom components</li>
-              <li>SCSS</li>
-              <li>Vue 2</li>
-              <li>Vue Router</li>
-              <li>Vue 3</li>
-              <li>Vuex</li>
-              <li>Nuxt</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Redux Toolkit</li>
-              <li>Cypress</li>
-              <li>Gherkin</li>
-              <li>D3.js</li>
-              <li>Node.js</li>
-              <li>Linux</li>
-              <li>Git</li>
-            </ul>
-          </section>
-          <section class="present">
-            <h2 data-nav-title>Present</h2>
-            <p>Now I think about how:</p>
+          <section class="section">
+            <h2 data-nav-title>Projects with me</h2>
             <ul>
-              <li>better handle errors and exceptions;</li>
-              <li>write applications that scale at minimal cost;</li>
-              <li>write easily portable code;</li>
-              <li>make the code self-documenting and easy to understand.</li>
-            </ul>
-          </section>
-          <section class="goals">
-            <h2 data-nav-title>In future</h2>
-            I plan to study:
-            <ul class="goals__list">
-              <li>Emacs</li>
-              <li>Touch typing</li>
-              <li>SQL</li>
-              <li>Docker</li>
-              <li>Clojure</li>
-              <li>NixOS</li>
+              <li>
+                ERP is an internal company project for planning and informing
+                employees, recording the status of projects, and maintaining
+                company accounting.
+              </li>
+              <li>
+                Dynamic Aggregator - a platform for aggregating information that
+                allows you to add scripts, meta tags (SEO), create color
+                schemes, localizations, dynamic filtering, sorting and other
+                things. Based on the project, 3 sites were deployed, and one
+                common stand was used for testing. Main site
+                <a href="https://askwallet.io/" target="_blank" rel="noopener"
+                  >askwallet.io</a
+                >
+              </li>
+              <li>
+                The site of the company. The customer acquisition department
+                received a request to create a static company website to replace
+                the one-pager on the Tilda platform. Implementation took
+                approximately three weeks.
+              </li>
+              <li>
+                Business cats. A highly loaded browser application was developed
+                for the SEZ "Alabuga" company - a business simulation for
+                training and selecting employees and students in a game form.
+                Now the finished application is actively used in the company.
+              </li>
+              <li>
+                EcoLK - personal account for managing invoices, receipts,
+                applications and other opportunities related to waste storage
+                and removal.
+              </li>
+              <li>
+                NFT-marketplace - integration of the front end, made by the
+                contractor, with the backend in PHP.
+              </li>
+              <li>and several other small projects.</li>
             </ul>
           </section>
         </main>
